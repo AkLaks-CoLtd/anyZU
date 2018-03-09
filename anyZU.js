@@ -327,7 +327,7 @@ link.rel = "stylesheet";
 link.media = "screen,print";
 
 
-if ((fontDetect(document.getElementsByTagName("body")[0].textContent)) === "zawgyi") {
+if ((fontDetect(document.getElementsByClassName("anyZU")[0].textContent)) === "zawgyi") {
     document.getElementsByClassName("anyZU")[0].textContent = fontConvert(document.getElementsByTagName("body")[0].textContent, 'unicode');
 } else {
     document.getElementsByClassName("anyZU")[0].textContent = document.getElementsByTagName("body")[0].textContent;
@@ -335,6 +335,10 @@ if ((fontDetect(document.getElementsByTagName("body")[0].textContent)) === "zawg
 
 document.getElementsByClassName("anyZU")[0].appendChild(link);
 document.getElementsByClassName("anyZU")[0].style.fontFamily = "Padauk, sans-serif";
+
+
+
+
 
 
 
